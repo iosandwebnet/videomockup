@@ -1,0 +1,63 @@
+.custom-upload-button {
+  margin: auto;
+  margin-top: 40px;
+  padding: 12px 20px;
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem; /* same as rounded-lg */
+  font-weight: 600;       /* font-semibold */
+  color: rgb(18, 17, 17);
+  transition: all 0.3s;
+}
+
+.custom-upload-button.disabled {
+  background-color: #9ca3af; /* gray-400 */
+  cursor: not-allowed;
+}
+
+.custom-upload-button.enabled {
+  background-color: #fdfdfd; /* gray-800 */
+}
+
+.custom-upload-button.enabled:hover {
+  background-color: #ffffff; /* gray-900 */
+}
+
+
+.progress{
+    background: #ebebeb;
+    min-height: 150px;
+    border-radius: 10px;
+    margin: auto;
+    width: 450px;
+}
+
+
+.UploadButton{
+  width: 180px;
+    margin: auto;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: black;
+  display: flex;
+  color: white;
+  font-family: math;
+  border-radius: 6px;
+  flex-direction: column;
+} 
+.message{
+  text-align: center;
+}
+.filenamemassges{
+  text-align: center;
+}
+
+.logoutbutton{
+    border: none;
+    background-color: #010101;
+    border-radius: 10px;
+    color: white;
+    padding: 11px 20px;
+}

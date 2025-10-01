@@ -1,0 +1,107 @@
+
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: auto;
+    border-radius: 12px;
+    margin-top: 100px;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    box-shadow: 0 10px 30px rgba(249, 180, 180, 0.15);
+}
+
+/* 📱 On small screens -> stack vertically */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-panel {
+    text-align: center;
+  }
+
+  .right-panel {
+    padding: 20px;
+  }
+}
+
+.left-panel {
+  flex: 1;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  color: black;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: linear-gradient(to right, #2563eb, #7e22ce);
+}
+    {/* <div className="flex items-center justify-center min-h-screen bg-gray-100 p-6">
+      <div className="videoDetail rounded-xl shadow-lg max-w-xl p-6 w-md">
+        <h1 className="text-2xl font-bold mb-4 text-center">Video Detail</h1>
+        {videoData ? (
+          <>
+            <p>ID: {videoData.id}</p>
+            <p>Name: {videoData.name}</p>
+            <p>Type: {videoData.type}</p>
+            <p>Uploaded Date: {new Date(videoData.uploadedAt).toLocaleString()}</p>
+            <video
+              controls
+              autoPlay
+              muted
+              className="rounded-lg showvideo "
+            >
+              <source src={`/videos/${videoData.name}`} type={videoData.type} />
+              Your browser does not support the video tag.
+            </video>
+          </>
+        ) : (
+          <div className="w-full h-64 bg-gray-200 flex items-center justify-center rounded-lg text-gray-500">
+            Video preview not available
+          </div>
+        )}
+         
+        <div className="flex justify-center mt-4">
+          <button
+            className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition-all"
+            onClick={() => router.push("/upload")}
+          >
+            Back to Upload
+          </button>
+        </div>
+      </div>
+    </div> */}
